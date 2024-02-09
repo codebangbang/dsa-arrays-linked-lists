@@ -38,6 +38,8 @@ class LinkedList {
     } else {
      this.tail.next = newNode;
      this.tail = newNode;
+    }
+    this.length += 1;
   }
 
   /** unshift(val): add new value to start of list. */
@@ -165,6 +167,6 @@ class LinkedList {
     }
     return total / this.length;
   }
-
+}
 
 module.exports = LinkedList;
